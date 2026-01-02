@@ -157,6 +157,10 @@ else{
   document.getElementById("festivalText").innerText =
     lang=="mr"?"दैनंदिन पूजेसाठी शुद्ध कपूर":"Pure camphor for everyday rituals";
 }
+<script>
+if(!localStorage.getItem("siteLang")){
+  window.location.href="language.html";
+}
 </script>
 
 </body>
