@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Morya Essentials | Trust</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  margin:0;
+  font-family:Segoe UI, sans-serif;
+  background:#f4f6f8;
+}
+
+header{
+  background:#0f2027;
+  color:#fff;
+  padding:16px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.brand{
+  font-size:22px;
+  font-weight:700;
+}
+
+.menu-btn{
+  font-size:26px;
+  cursor:pointer;
+}
+
+nav{
+  position:fixed;
+  top:0;
+  right:-100%;
+  width:260px;
+  height:100%;
+  background:#111;
+  color:#fff;
+  padding:30px 20px;
+  transition:0.4s;
+}
+
+nav a{
+  display:block;
+  color:#fff;
+  text-decoration:none;
+  margin:18px 0;
+}
+
+.close{
+  font-size:24px;
+  text-align:right;
+  cursor:pointer;
+}
+
+/* CONTENT */
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+h1{
+  text-align:center;
+  margin-bottom:25px;
+}
+
+.trust-box{
+  background:#fff;
+  padding:30px;
+  border-radius:18px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+  margin-bottom:40px;
+}
+
+.trust-box h2{
+  margin-bottom:12px;
+}
+
+.trust-box p{
+  color:#555;
+  line-height:1.6;
+}
+
+/* FESTIVAL */
+.festival{
+  background:linear-gradient(135deg,#2c5364,#0f2027);
+  color:#fff;
+  padding:35px;
+  border-radius:20px;
+  text-align:center;
+}
+
+.festival h2{
+  font-size:26px;
+  margin-bottom:10px;
+}
+
+.festival p{
+  font-size:15px;
+  opacity:0.9;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">Morya Essentials</div>
+  <div class="menu-btn" onclick="openMenu()">☰</div>
+</header>
+
+<nav id="menu">
+  <div class="close" onclick="closeMenu()">✕</div>
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="trust.html">Our Essence</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+  <h1>Our Essence of Trust</h1>
+
+  <div class="trust-box">
+    <h2>Rooted in Faith</h2>
+    <p>
+      Morya Essentials stands for purity, consistency and devotion.
+      Every product is refined with care to support sacred rituals,
+      daily pooja and festivals across generations.
+    </p>
+  </div>
+
+  <div class="festival" id="festivalBox">
+    <h2>Festival Blessings</h2>
+    <p>May your devotion always remain pure ✨</p>
+  </div>
+
+</div>
+
+<script>
+/* LANGUAGE CHECK */
+if(!localStorage.getItem("siteLang")){
+  window.location.href="language.html";
+}
+
+/* MENU */
+function openMenu(){
+  document.getElementById("menu").style.right="0";
+}
+function closeMenu(){
+  document.getElementById("menu").style.right="-100%";
+}
+
+/* FESTIVAL AUTO */
+const festivalBox = document.getElementById("festivalBox");
+const today = new Date().getMonth()+1;
+
+if(today==9){
+  festivalBox.innerHTML="<h2>Ganpati Bappa Morya 🙏</h2><p>May Lord Ganesha bless your home with purity & prosperity</p>";
+}
+else if(today==10){
+  festivalBox.innerHTML="<h2>Happy Navratri 🌸</h2><p>Celebrate devotion with divine purity</p>";
+}
+else if(today==11){
+  festivalBox.innerHTML="<h2>Shubh Diwali 🪔</h2><p>Illuminate your rituals with pure camphor</p>";
+}
+</script>
+
+</body>
+</html>
