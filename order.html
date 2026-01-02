@@ -1,67 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Place Order | Morya Essentials</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
-body{
-  background:#0b0b0b;
-  color:#fff;
-  font-family:Arial, sans-serif;
-}
-.box{
-  max-width:420px;
-  margin:40px auto;
-  padding:20px;
-}
-h2{
-  text-align:center;
-  color:#d4af37;
-}
-input, textarea, button{
-  width:100%;
-  padding:12px;
-  margin-top:12px;
-  border-radius:8px;
-  border:none;
-}
-button{
-  background:#d4af37;
-  font-weight:bold;
-  font-size:16px;
-}
-</style>
+  <meta charset="UTF-8">
+  <title>Products | Morya Essentials</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="box">
-<h2>Confirm Your Order</h2>
+<nav>
+  <h1>Morya Essentials</h1>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+  </div>
+</nav>
 
-<form action="https://formsubmit.co/help.moryatraders@gmail.com" method="POST">
+<section class="products">
 
-<input type="hidden" name="_subject" value="New Order from Website">
+  <div class="card">
+    <h3>Premium Camphor Tablets</h3>
+    <p>High purity camphor tablets</p>
+    <a class="btn" href="order.html">Order</a>
+  </div>
 
-<input name="name" placeholder="Full Name" required>
+  <div class="card">
+    <h3>Natural Camphor Powder</h3>
+    <p>Strong fragrance powder</p>
+    <a class="btn" href="order.html">Order</a>
+  </div>
 
-<input name="mobile" placeholder="Mobile Number" required>
+  <div class="card">
+    <h3>Bhimseni Camphor</h3>
+    <p>For pooja & havan</p>
+    <a class="btn" href="order.html">Order</a>
+  </div>
 
-<select name="product" required>
-  <option>Premium Camphor Tablets</option>
-  <option>Natural Camphor Powder</option>
-  <option>Temple Grade Camphor</option>
-</select>
+  <div class="card">
+    <h3>Camphor Cubes</h3>
+    <p>Long burning cubes</p>
+    <a class="btn" href="order.html">Order</a>
+  </div>
 
-<input type="number" name="quantity" placeholder="Quantity" required>
+  <div class="card">
+    <h3>Camphor Cone</h3>
+    <p>Temple use premium cones</p>
+    <a class="btn" href="order.html">Order</a>
+  </div>
 
-<textarea name="address" placeholder="Full Address" required></textarea>
-
-<button type="submit">Place Order</button>
-
-</form>
-</div>
+</section>
 
 </body>
 </html>
