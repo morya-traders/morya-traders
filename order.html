@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Products | Morya Essentials</title>
+  <title>Order | Morya Essentials</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,38 +15,28 @@
   </div>
 </nav>
 
-<section class="products">
+<section class="order">
+  <h2>Place Your Order</h2>
 
-  <div class="card">
-    <h3>Premium Camphor Tablets</h3>
-    <p>High purity camphor tablets</p>
-    <a class="btn" href="order.html">Order</a>
-  </div>
+  <form>
+    <input type="text" placeholder="Customer Name" required>
+    <input type="tel" placeholder="Mobile Number" required>
 
-  <div class="card">
-    <h3>Natural Camphor Powder</h3>
-    <p>Strong fragrance powder</p>
-    <a class="btn" href="order.html">Order</a>
-  </div>
+    <select required>
+      <option value="">Select Product</option>
+      <option>Camphor Tablets</option>
+      <option>Camphor Powder</option>
+      <option>Bhimseni Camphor</option>
+      <option>Camphor Cubes</option>
+      <option>Camphor Cone</option>
+    </select>
 
-  <div class="card">
-    <h3>Bhimseni Camphor</h3>
-    <p>For pooja & havan</p>
-    <a class="btn" href="order.html">Order</a>
-  </div>
+    <input type="number" placeholder="Quantity" required>
 
-  <div class="card">
-    <h3>Camphor Cubes</h3>
-    <p>Long burning cubes</p>
-    <a class="btn" href="order.html">Order</a>
-  </div>
+    <button type="submit">Submit Order</button>
+  </form>
 
-  <div class="card">
-    <h3>Camphor Cone</h3>
-    <p>Temple use premium cones</p>
-    <a class="btn" href="order.html">Order</a>
-  </div>
-
+  <p class="note">* Our team will contact you for confirmation</p>
 </section>
 
 </body>
