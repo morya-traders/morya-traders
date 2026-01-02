@@ -203,12 +203,29 @@
 <a class="whatsapp" href="https://wa.me/918767231315">WhatsApp</a>
 
 <script>
-  function openMenu(){document.getElementById("menu").style.right="0";}
-  function closeMenu(){document.getElementById("menu").style.right="-100%";}
+  function openMenu(){
+    document.getElementById("menu").style.right="0";
+  }
+
+  function closeMenu(){
+    document.getElementById("menu").style.right="-100%";
+  }
+
+  // AUTO CLOSE when clicking any menu link
+  document.addEventListener("DOMContentLoaded", function(){
+    const links = document.querySelectorAll("#menu a");
+    links.forEach(link=>{
+      link.addEventListener("click", ()=>{
+        closeMenu();
+      });
+    });
+  });
+
   function setLang(lang){
     document.getElementById("lang-screen").style.display="none";
     if(lang==="mr"){
-      document.querySelector(".hero h1").innerHTML="कापूर, <span>शुद्ध भक्तीसाठी परिष्कृत</span>";
+      document.querySelector(".hero h1").innerHTML =
+      "कापूर, <span>शुद्ध भक्तीसाठी परिष्कृत</span>";
       document.getElementById("tagline").innerText="श्रद्धेने शुद्ध";
     }
   }
