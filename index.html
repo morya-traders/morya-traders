@@ -1,65 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Morya Essentials | Pure by Faith</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins}
-body{background:#0b0b0b;color:#fff}
-header{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1px solid #222}
-.logo{font-family:"Playfair Display";color:#c9a24d;font-size:22px}
-.menu-btn{font-size:26px;cursor:pointer}
-nav{position:fixed;top:0;right:-100%;width:70%;height:100%;background:#000;padding:40px 20px;transition:.3s;z-index:999}
-nav a{display:block;margin:20px 0;color:#fff;text-decoration:none;font-size:18px}
-.hero{padding:80px 20px;text-align:center;background:linear-gradient(to bottom,rgba(0,0,0,.7),#000),url("kapoor.jpg") center/cover no-repeat}
-.hero h1{font-family:"Playfair Display";font-size:34px;margin-bottom:15px}
-.hero span{color:#c9a24d}
-.hero p{opacity:.85;margin-bottom:25px}
-.btn{padding:14px 30px;background:#c9a24d;border:none;border-radius:30px;font-weight:500;cursor:pointer}
-footer{background:#000;padding:30px;text-align:center;font-size:14px;opacity:.8}
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25d366;color:#fff;padding:14px 18px;border-radius:50px;text-decoration:none;font-weight:500}
-</style>
+  <meta charset="UTF-8">
+  <title>Morya Essentials</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-<div class="logo">Morya Essentials</div>
-<div class="menu-btn" onclick="openMenu()">☰</div>
-</header>
-
-<nav id="menu">
-<a href="index.html">Home</a>
-<a href="products.html">Products</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
+<nav>
+  <h1>Morya Essentials</h1>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+  </div>
 </nav>
 
 <section class="hero">
-<h1>Camphor, <span>Refined for Pure Devotion</span></h1>
-<p>Pure by Faith</p>
-<a href="products.html"><button class="btn">View Products</button></a>
+  <h2>Premium Camphor Products</h2>
+  <p>High quality camphor for pooja & daily rituals</p>
+  <a class="btn" href="products.html">View Products</a>
 </section>
 
 <footer>
-📍 Kolhapur, Maharashtra<br>
-© 2025 Morya Essentials
+  <p>© 2026 Morya Essentials | Kolhapur</p>
 </footer>
-
-<a class="whatsapp" href="https://wa.me/918767231315">WhatsApp</a>
-
-<script>
-const menu=document.getElementById("menu");
-function openMenu(){menu.style.right="0"}
-function closeMenu(){menu.style.right="-100%"}
-document.addEventListener("click",e=>{
-if(!menu.contains(e.target)&&!e.target.classList.contains("menu-btn")) closeMenu();
-});
-</script>
 
 </body>
 </html>
