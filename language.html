@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Morya Essentials | Pure by Faith</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      text-align: center;
+    }
+
+    .box {
+      background: rgba(0,0,0,0.4);
+      padding: 40px 25px;
+      border-radius: 16px;
+      width: 90%;
+      max-width: 360px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+
+    .tagline {
+      font-size: 14px;
+      margin: 10px 0 30px;
+      opacity: 0.9;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      margin: 12px 0;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .btn:hover {
+      transform: scale(1.03);
+    }
+
+    .marathi {
+      background: #f5c16c;
+      color: #000;
+    }
+
+    .english {
+      background: #ffffff;
+      color: #000;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <h1>MORYA ESSENTIALS</h1>
+    <div class="tagline">Pure by Faith</div>
+
+    <p>Select Your Language</p>
+
+    <button class="btn marathi" onclick="setLang('mr')">मराठी</button>
+    <button class="btn english" onclick="setLang('en')">English</button>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      localStorage.setItem("siteLang", lang);
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>
